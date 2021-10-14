@@ -13,9 +13,9 @@ application.use(
     graphiql: true,
   })
 );
-const port = process.env.port || 4000;
+const PORT = process.env.PORT || 4000;
 mongoose.connect(process.env.DB_connection || "",
-  () => console.log(`App is listening on port ${port} !`)
+  () => console.log(`App is listening on port ${PORT} !`)
 );
 
-application.listen(port);
+application.listen(PORT);
